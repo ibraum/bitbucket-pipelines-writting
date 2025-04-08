@@ -1,0 +1,13 @@
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: build when push on develop
+          script:
+            - npm run build
+    master:
+      - step:
+          name: build and deploy when push on master
+          script:
+            - npm run build
+            - npm run deploy
