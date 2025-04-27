@@ -33,3 +33,25 @@
 - Mettre 2 steps différents.
 
 ```🎯 Question bonus : Comment définir un step pour uniquement develop sans toucher aux autres branches ?```
+
+## 🧠 Exercice 3 — Niveau Avancé : "Cache & Artifacts Champions League"
+
+#### Objectif :
+
+- Ajouter du caching sur node_modules.
+
+- Construire le projet (npm run build).
+
+- Sauvegarder le dossier /dist en artifacts.
+
+- Faire que le second step récupère les artifacts pour déployer (npm run deploy).
+
+#### Contraintes :
+
+- Pipeline multi-steps.
+
+- Le premier step build + cache.
+
+- Le second step déploie en utilisant les fichiers artifacts.
+
+``` 🎯 Question bonus : Quelle différence entre caches et artifacts dans Bitbucket ?```
