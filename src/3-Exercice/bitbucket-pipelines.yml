@@ -1,0 +1,17 @@
+pipelines:
+  default:
+    - steps:
+      - step:
+        name: Add caching and build
+        caches:
+          - node
+        script:
+          - npm run build
+        artifacts:
+          - dist/**
+      - step:
+        name: Deploy artifacts files
+        script:
+          - ls -l dist/
+          - npm run deploy
+            
